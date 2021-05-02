@@ -7,9 +7,6 @@ http.createServer(function(req , res){
           if(err) throw err ; 
           console.log('File Write Successfully');
     });
-
-
-    
     fs.open('abc1.html','a' , function(err , fd){
         if(err){ 
             throw err ;
