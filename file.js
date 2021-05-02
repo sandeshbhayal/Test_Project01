@@ -21,10 +21,14 @@ http.createServer(function(req , res){
         } 
     });
 
+
+
+
+
     fs.readFile('abc1.html' , function (err,data){
         if(err) throw err ; 
         res.writeHead(200 , {'Content-Type' : 'text/html'});
-        res.write('Hello Sandesh '+data);
+        res.write('Hello Sandesh Bhayal '+data);
         res.end();    
     });    
 }).listen(3000); 
